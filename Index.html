@@ -1,105 +1,153 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open-source discord website</title>
+    <link rel="preconnect" href="//fdn.fontcdn.ir">
+<link rel="preconnect" href="//v1.fontapi.ir">
+<link href="https://v1.fontapi.ir/css/SFProDisplay:400" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <!--Integrated CSS-->
+    
+    <style>
 
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Flosey-Romania</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-<style>
 
 * {
-	margin: 0;
-	padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-	background-color: rgb(32, 32, 32);
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  
+    background-color: rgb(32, 32, 32);
+    color: ghostwhite;
+    font-family: 'SF Pro Display', sans-serif;
+ 
 }
 
-#waves {
-	position: absolute;
-  bottom: 0;
+.presentation {
+    top: 40%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-style: italic !important;
 }
 
-#githubLogo {
-	text-decoration: none;
+
+
+
+.about {
+    margin-left: 2rem;
+    top: 100%;
+    width: 40%;
+    position:absolute;
 }
 
 
-#about {
-	background-color: #b400ff;
-	position: absolute;
-	top: 100%;
-	left: 0;
-	width: 100%;
-	height: 120%;
+#btn1 {
+    padding: 8px;
+    border: none;
+    background: linear-gradient(to right, #606c88, #3f4c6b);
+    color: white;
+    border-radius: 1rem;
+    -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 2.3px 2.3px 1.9px rgba(0, 0, 0, 0.018), 5.4px 5.4px 4.3px rgba(0, 0, 0, 0.026), 9.7px 9.7px 7.7px rgba(0, 0, 0, 0.032), 16.1px 16.1px 12.8px rgba(0, 0, 0, 0.038), 26.5px 26.5px 21.2px rgba(0, 0, 0, 0.044), 46.2px 46.2px 37px rgba(0, 0, 0, 0.052), 100px 100px 80px rgba(0, 0, 0, 0.07);
+          box-shadow: 2.3px 2.3px 1.9px rgba(0, 0, 0, 0.018), 5.4px 5.4px 4.3px rgba(0, 0, 0, 0.026), 9.7px 9.7px 7.7px rgba(0, 0, 0, 0.032), 16.1px 16.1px 12.8px rgba(0, 0, 0, 0.038), 26.5px 26.5px 21.2px rgba(0, 0, 0, 0.044), 46.2px 46.2px 37px rgba(0, 0, 0, 0.052), 100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-li {
-	display: inline;
-	float: right;
-	padding: 12px; 
-	color: white;
+
+#btn1:hover {
+    background: #2980b9;
 }
 
-a:visited { 
- text-decoration: none; 
- color: white; 
+@media screen and (max-width:800px) {
+    .presentation {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    
 }
 
-a:link {
-	text-decoration: none;
-	color: white;
+
+.about {
+    margin-left: 2rem;
+    top: 100%;
+    width: 100%;
+    position:absolute;
 }
 
-</style>
-
-	</head>
-	<body>
-
-		<nav>
-			<header>
-				<li style="list-style-type: none; "><a style="text-decoration: none;" href="#">Ban Appeal</a></li>
-				<li style="list-style-type: none; "><a style="text-decoration: none;" href="#">Staff Request</a></li>
-			</header>
-		</nav>
-
-<!--Font awesome-->
-
-<a style="text-decoration: none;" href="#"><i style=" text-decoration: none; font-size: 40px; position: absolute; top: 50%; left: 5%;" class="fab fa-discord"></i></a>
-<a href="https://github.com/Mihaidev-cloud"><i id="githubLogo"style=" text-decoration: none; font-size: 40px; position: absolute; top: 50%; left: 20%;" class="fab fa-github"></i></a>
 
 
-<!--Font Awesome-->
 
-	<h1 style="position: absolute; top: 30%; left: 5%; font-weight: 100; ">Flosey-Romania</h1>	
-	<h3 style="position: absolute; top: 40%; left: 5%; font-weight: 100; ">This website is still in developing.</h3>
-	</body>
+
+
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+          <a class="navbar-brand" >Open-source discord website</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Staff Request</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ban Appeal</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="presentation">
+       <h1>Open-source discord website</h1>
+       <p>This website is open source</p> 
+       <p href="https://github.com/Mihaidev-cloud/Site-code-open-source">Check out here to download the website, is open-source</p>
+       <button id="btn1">Download here!</button>
+    </div>
+
+
+    <div class="about">
+        <h1>About discord</h1>
+        <p>Discord is a free voice, video, and text chat app that's used by tens of millions of people ages 13+ to talk and hang out with their communities and friends. 
+
+            People use Discord daily to talk about many things, ranging from art projects and family trips to homework and mental health support. It's a home for communities of any size, but it's most widely used by small and active groups of people who talk regularly.
+            
+            The vast majority of servers are private, invite-only spaces for groups of friends and communities to stay in touch and spend time together. There are also larger, more open communities, generally centered around specific topics such as popular games like Minecraft and Fortnite. All conversations are opt-in, so people have total control over who they interact with and what their experience on Discord is.  
+            
+            People love Discord because it’s a home for all their communities and groups of friends. It's a place where they can be themselves and spend time with other people who share their interests and hobbies. There's no algorithm deciding what they should see, no endless scrolling, and no news feed. Conversations on Discord are driven by shared interests.</p>
+   
+   
+   
+        </div>
+
+<!--Integrated JS-->
+<script>
+    document.getElementById("btn1").onclick = function () {
+    location.href = "https://github.com/Mihaidev-cloud/Site-code-open-source";
+};
+
+</script>
+</body>
 </html>
-
-<script src="https://kit.fontawesome.com/1c2e479345.js" crossorigin="anonymous"></script>
-
-<svg id="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#b400ff" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-
-<section id="about">
-	<i style=" text-decoration: none; font-size: 200px; position: absolute; top: 80%; left: 50%; transform: translate(-50%);" class="fas fa-server"></i>
-	<h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h1>
-
-</section>
-
-
-
-<!--Fonts-->
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
-
-
-<!--Fonts End-->
